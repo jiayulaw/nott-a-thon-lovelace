@@ -9,7 +9,7 @@
 	height: auto;
 }
 .wave-edit{
-	height: 100vh;
+	height: auto;
 	width: 100%;
 	position: absolute;
 	z-index:0;
@@ -341,9 +341,11 @@
 		width: 250px;
 		height: 250px;
 	}
-	#line1,
-	#line2 {
+	#line1 {
 		font-size: 55px;
+	}
+	#line2{
+		font-size: 20px;
 	}
 	#line3,
 	#line4,
@@ -369,9 +371,11 @@
 		width: 250px;
 		height: 250px;
 	}
-	#line1,
-	#line2 {
-		font-size: 52px;
+	#line1 {
+		font-size: 55px;
+	}
+	#line2{
+		font-size: 20px;
 	}
 	#line3,
 	#line4,
@@ -392,6 +396,7 @@
 		font-size: 45px;
 	}
 	#line2 {
+		font-size: 20px;
 		padding-bottom: 20px;
 	}
 	#line3,
