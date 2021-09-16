@@ -338,8 +338,8 @@
 		padding-top: 50px;
 	}
 	.main > .progPic > img {
-		width: 400px;
-		height: 300px;
+		width: 250px;
+		height: 250px;
 	}
 	#line1,
 	#line2 {
@@ -366,8 +366,8 @@
 	}
 	.main > .progPic > img {
 		padding-top: 20px;
-		width: 400px;
-		height: 300px;
+		width: 250px;
+		height: 250px;
 	}
 	#line1,
 	#line2 {
@@ -567,7 +567,7 @@
 	background-color: rgba(4, 3, 70, 0.8);
 }
 .container-intro {
-	background-color: rgba(57, 3, 100, 0.8);
+	background-color: rgba(94, 10, 163, 0.8);
 }
 .container-prize {
 	background-color: rgba(27, 1, 27, 0.8);
