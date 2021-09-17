@@ -597,20 +597,16 @@ h5 {
 }
 
 .glow{ 
-    font-family: cursive;
-    color: white;
     animation: glow 1s ease-in-out infinite alternate;
    
 }
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #ffb84d, 0 0 30px #ffed4d
-		, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d;
+        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #ffb84d, 0 0 30px #ffed4d;
     }
     to {
-        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #f0e006, 0 0 30px #ffed4d
-		, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d, 0 0 80px #ffed4d;
+        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #f0e006, 0 0 40px #ffed4d, 0 0 60px #ffed4d;
     }
 }
 #mockcontest {
