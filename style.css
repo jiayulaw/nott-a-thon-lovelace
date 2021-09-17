@@ -569,16 +569,16 @@
 	padding-bottom: 100px;
 }
 .container-about {
-	background-color: rgba(4, 3, 70, 0.8);
+	background-color: rgba(58, 3, 104, 0.8);
 }
 .container-intro {
-	background-color: rgba(94, 10, 163, 0.8);
+	background-color: rgb(14, 2, 41, 0.8);
 }
 .container-prize {
-	background-color: rgba(27, 1, 27, 0.8);
+	background-color: rgba(58, 3, 104, 0.8);
 }
 .container-detail {
-	background-color: rgba(4, 37, 75, 0.8);
+	background-color: rgb(14, 2, 41, 0.8);
 }
 h5 {
 	font-family: serif;
@@ -605,10 +605,12 @@ h5 {
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #ffb84d, 0 0 30px #ffed4d;
+        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #ffb84d, 0 0 30px #ffed4d
+		, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d;
     }
     to {
-        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #fcff4d, 0 0 40px #d8ff4d, 0 0 50px #d0ff4d;
+        text-shadow: 0 0 10px rgb(19, 19, 19), 0 0 20px #f0e006, 0 0 30px #ffed4d
+		, 0 0 40px #ffed4d, 0 0 50px #ffed4d, 0 0 60px #ffed4d, 0 0 70px #ffed4d, 0 0 80px #ffed4d;
     }
 }
 #mockcontest {
@@ -955,7 +957,8 @@ h5 {
 }
 .iet > .profile {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+	max-width: 100%;
 }
 .iet > div > .boss {
 	display: grid;
@@ -964,34 +967,62 @@ h5 {
 	text-align: center;
 }
 .boss > .name {
-	color: rgb(255, 100, 255);
+	/*color: rgb(255, 100, 255);*/
+	color: rgb(255, 234, 118);
 	font-size: 26px;
+	/*added font family*/
+	font-family:fantasy;
 	padding: 30px 0;
 }
+
 .boss > .position {
 	color: rgba(255, 255, 255, 0.9);
 	font-size: 20px;
 	padding-bottom: 100px;
 }
+.boss > div {
+	position:relative;
+}
 
-.boss > img {
-	width: 180px;
-	height: 180px;
-	border: 6px rgba(255, 234, 118, 0.8) solid;
+.boss > div >.circle{
+	position:absolute;
+	top:-20px;
+	left:-20px;
+	width: 200px;
+	height: 200px;
+	background: linear-gradient(#33ccff, #ff0066);
+	border-radius: 50%;
+	animation: animate 2s linear infinite;
+	z-index: 0;
+}
+
+@keyframes animate {
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+.boss > div > img {
+	width: 160px;
+	height: 160px;
+	/*border: 6px rgba(255, 234, 118, 0.8) solid;*/
+	border-radius: 50%;
 	filter: brightness(95%);
 	transition: all 0.5s;
+	z-index: 1;
 }
-.boss > img:hover {
+
+.boss > div > img:hover {
 	filter: brightness(115%);
 }
 @media screen and (max-width: 1300px) {
 	.iet > .profile {
-		grid-template-columns: repeat(3, minmax(200px, 1fr));
+		grid-template-columns: repeat(3, minmax(260px, 1fr));
 	}
-	.boss > img {
-		width: 200px;
-		height: 200px;
-	}
+	
 	.boss > .position {
 		padding-bottom: 50px;
 	}
@@ -1018,11 +1049,7 @@ h5 {
 
 @media screen and (max-width: 750px) {
 	.iet > .profile {
-		grid-template-columns: repeat(2, minmax(200px, 1fr));
-	}
-	.boss > img {
-		width: 180px;
-		height: 180px;
+		grid-template-columns: repeat(2, minmax(260px, 1fr));
 	}
 	.iet > h8 {
 		font-size: 40px;
@@ -1042,11 +1069,7 @@ h5 {
 }
 @media screen and (max-width: 450px) {
 	.iet > .profile {
-		grid-template-columns: repeat(1, minmax(200px, 1fr));
-	}
-	.boss > img {
-		width: 200px;
-		height: 200px;
+		grid-template-columns: repeat(1, minmax(260px, 1fr));
 	}
 	.boss.tech > .position {
 		padding-bottom: 100px;
